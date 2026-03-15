@@ -66,18 +66,19 @@ body {
   color: #000000;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
+  color: #a657e7;
 }
 /* Section1 */
 .section1 {
   max-width: 1200px;
   margin: auto;
 }
-.section1MainLeft{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding-top: 45px;
-    padding-bottom: 45px;
+.section1Main {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .secttion1Star {
   display: flex;
@@ -95,7 +96,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   width: 300px;
-  height: 50px;
+  height: 40px;
 }
 .section1Lefthead {
   font-family: "Poppins", sans-serif;
@@ -121,7 +122,6 @@ body {
 .section1Button {
   display: flex;
   gap: 24px;
-  
   margin-top: 20px;
 }
 .sectionButton1 {
@@ -148,13 +148,202 @@ body {
   border-radius: 24px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #B262F3;
+  color: #b262f3;
 }
-.leftDown{
-    display: grid;
+.socialHeading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+}
+.section1Image {
+  display: flex;
+  gap: 20px;
+}
+.socialIcon {
+  display: grid;
+  gap: 20px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+.socialIconImg {
+  display: flex;
+  gap: 32px;
+}
+.simg {
+  width: 30px;
+  height: 30px;
+}
+        /* Section 2 */
+.section2{
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+.section2Main{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
+.section2Left{
+  position: relative;
+  padding-right: 30px;
+  flex: 1;
 }
-.section2Image{
+
+.section2Left::after{
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 80%;
+  width: 2px;
+  background: linear-gradient(#00000000,#000000,#66666600);
+}
+.section2LeftHeading{
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #000000;
+}
+.section2Leftparagraph{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.section2Right{
+  display: flex;
+  gap: 30px;
+  flex: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+  .section1Main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .leftsss {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .section1Image {
+    flex-direction: column;
+  }
+  .section1Lefthead {
+    font-size: 25px;
+  }
+  .section1p {
+    font-size: 12px;
+  }
+  .section1Button {
+    justify-content: center;
+  }
+  .sectionButton1 {
+    font-size: 15px;
+  }
+  .sectionButton2 {
+    font-size: 15px;
+  }
+
+  /* Section 2 */
+  .section2Main{
+    padding: 20px;
+  }
+.section2Left{
+  justify-items: center;
+  margin: auto;
+}
+  .section2LeftHeading{
+    font-size: 24px;
+  }
+
+  .section2Leftparagraph{
+    font-size: 16px;
+  }
+
+ .section2Right{
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* auto width column */
+  gap: 20px;
+  justify-content: center;
+  width: 340px;
+}
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .section1Main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .leftsss {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .section1Lefthead {
+    font-size: 22px;
+  }
+  .sectionButton1 {
+    font-size: 18px;
+  }
+  .sectionButton2 {
+    font-size: 18px;
+  }
+  .section1p {
+    font-size: 10px;
+  }
+  .section1Button {
+    justify-content: center;
+  }
+  .socialIconImg {
+    display: flex;  
+    justify-content: center;
+    gap: 32px;
+  }
+  /* Section 2 */
+   .section2Main{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .section2Left::after{
+    display: none; /* divider hide */
+  }
 }
