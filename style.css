@@ -535,8 +535,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 /* Section7 */
 .section7{
@@ -724,12 +722,138 @@ body {
   border-radius: 8px;
   margin-top: 30px;
 }
+/* Fotter */
+.footer{
+  padding-top: 46px;
+  padding-bottom: 46px;
+  background-color: #FFFFFF;
+  margin-top: 110px;
+}
+.footerAdjust{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.logo{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+.aboutUs{
+   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+}
+.footerpara{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344054;
+}
+.grpBtn{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.fbtn{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 27px;
+  padding-left: 27px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  border : 1px solid #D0D5DD;
+  border-radius: 24px;
+}
+.footerDemo{
+  background-image: linear-gradient(#b564f7, #6a2f9b);
+  color: #ffffff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 27px;
+  padding-left: 27px;
+  border-radius: 24px;
+  border: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: flex;
+}
+.quick{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+.foul{
+  display: grid;
+  gap: 10px;
+}
+.foul li {
+  list-style: none;
+}
+.foul li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344054;
+}
+.contact{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.form-group{
+  margin-bottom:12px;
+}
+input, textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-size:14px;
+  outline:none;
+  transition:0.2s;
+}
+input:focus, textarea:focus{
+  border-color:#1a73e8;
+}
 
+textarea{
+  resize:none;
+  min-height:90px;
+}
+.lsatButton{
+  width:100%;
+  padding:12px;
+  border:none;
+  background:#111;
+  color:white;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  transition:0.2s;
+}
+.lsatButton:hover{
+  background:#000;
+}
 
-
-
-
-
+.arrow{
+  font-size:16px;
+}
 
 
 
@@ -991,6 +1115,13 @@ body {
 .Comma{
   width: 100%;
 }
+.ratting{
+  gap: 5px;
+}
+.ratting img {
+    width: 18px;
+    height: 18px;
+}
 
 
     /* Botttom Card */
@@ -1034,7 +1165,54 @@ body {
 .section8paragrph{
   font-size: 12px;
 }
-
+/* Footer */
+.logo{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.aboutUs{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.footerpara{
+  font-size: 10px;
+  margin-left: 10px;
+}
+.fbtn{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 10px;
+}
+.footerDemo{
+  padding-top: 5px;
+  padding-bottom: 5%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 10px;
+}
+.grpBtn{
+  align-items: center;
+  margin-left: 10px;
+}
+.quick{
+  font-size: 16px;
+  margin-left: 10px;
+}
+.foul{
+  margin-left: 10px;
+}
+.foul li a{
+  font-size: 12px;
+}
+.footerAdjust{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  
+}
 }
 
 
